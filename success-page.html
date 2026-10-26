@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Заявка отправлена — земельный актив 26,118 га</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy: #1a2332;
+    --graphite: #2d3748;
+    --white: #ffffff;
+    --ink-muted: #a9b2c3;
+    --gold: #c9a961;
+    --gold-soft: rgba(201,169,97,.14);
+    --ease: cubic-bezier(.22,.61,.36,1);
+  }
+  *,*::before,*::after{ box-sizing: border-box; }
+  html,body{
+    margin: 0;
+    min-height: 100vh;
+    background: var(--navy);
+    color: var(--white);
+    font-family: 'Inter', Arial, sans-serif;
+    line-height: 1.6;
+  }
+  body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+  }
+  .card{
+    max-width: 480px;
+    width: 100%;
+    text-align: center;
+    padding: 48px 36px;
+    background: #212c3f;
+    border: 1px solid rgba(255,255,255,.08);
+    border-radius: 2px;
+    animation: cardIn .6s var(--ease) both;
+  }
+  @keyframes cardIn{
+    from{ opacity: 0; transform: translateY(16px); }
+    to{ opacity: 1; transform: translateY(0); }
+  }
+  .icon{
+    width: 64px;
+    height: 64px;
+    margin: 0 auto 24px;
+    border-radius: 50%;
+    background: var(--gold-soft);
+    border: 1px solid var(--gold);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .icon svg{ width: 28px; height: 28px; }
+  .eyebrow{
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: .14em;
+    color: var(--gold);
+    font-weight: 600;
+    margin: 0 0 14px;
+  }
+  h1{
+    font-family: 'Montserrat', 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: clamp(24px, 4vw, 30px);
+    margin: 0 0 16px;
+    letter-spacing: -0.01em;
+  }
+  p{
+    color: var(--ink-muted);
+    font-size: 15.5px;
+    margin: 0 0 32px;
+  }
+  .btn{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 30px;
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: .05em;
+    border-radius: 2px;
+    background: var(--gold);
+    color: var(--navy);
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    transition: transform .25s var(--ease), background .25s var(--ease);
+  }
+  .btn:hover{ background: #ddbf7d; transform: translateY(-2px); }
+  .footnote{
+    margin-top: 28px;
+    font-size: 12px;
+    color: rgba(169,178,195,.7);
+  }
+</style>
+</head>
+<body>
+  <div class="card">
+    <div class="icon" aria-hidden="true">
+      <svg viewBox="0 0 24 24" fill="none" stroke="#c9a961" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <polyline points="20 6 9 17 4 12"></polyline>
+      </svg>
+    </div>
+    <p class="eyebrow">Земельный актив · 26,118 га</p>
+    <h1>Заявка отправлена</h1>
+    <p>
+      Спасибо! Мы свяжемся с вами в ближайшее время для передачи полного
+      пакета документов по активу.
+    </p>
+    <a class="btn" href="index.html">Вернуться на сайт</a>
+    <p class="footnote">Материал носит информационный характер и не является публичной офертой</p>
+  </div>
+</body>
+</html>
